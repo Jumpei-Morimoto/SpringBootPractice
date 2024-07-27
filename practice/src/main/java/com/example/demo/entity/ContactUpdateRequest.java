@@ -1,4 +1,5 @@
-package com.example.demo.form;
+package com.example.demo.entity;
+
 
 import java.io.Serializable;
 
@@ -9,10 +10,12 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
-public class ContactForm implements Serializable{
-
+@EqualsAndHashCode(callSuper=false)
+public class ContactUpdateRequest  implements Serializable{
+	
 	@NotBlank
     private String lastName;
 	
@@ -20,7 +23,7 @@ public class ContactForm implements Serializable{
     private String firstName;
 	
 	@NotBlank
-	@Email
+	  @Email
     private String email;
 	
 	@NotBlank
@@ -45,5 +48,5 @@ public class ContactForm implements Serializable{
 	
 	@NotNull
 	private Long id;
-}
 
+}
