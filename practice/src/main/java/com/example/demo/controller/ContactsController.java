@@ -48,6 +48,7 @@ public class ContactsController {
 		contactUpdateRequest.setEmail(contact3.getEmail());
 		contactUpdateRequest.setPhone(contact3.getPhone());
 		contactUpdateRequest.setZipCode(contact3.getZipCode());
+		contactUpdateRequest.setAddress(contact3.getAddress());
 		contactUpdateRequest.setBuildingName(contact3.getBuildingName());
 		contactUpdateRequest.setBody(contact3.getBody());
 		model.addAttribute("contactUpdateRequest", contactUpdateRequest);

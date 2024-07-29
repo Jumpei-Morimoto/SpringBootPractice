@@ -31,7 +31,7 @@ public class SecurityConfig {
               ).authorizeHttpRequests(authz -> authz
                 .requestMatchers(PathRequest.toStaticResources().atCommonLocations()).permitAll()
                 .requestMatchers("/").permitAll()
-                .requestMatchers("/admin/signin","/admin/signup","/admin/signup/confirm2","/admin/signup/register","/admin/signup/complete2").permitAll()
+                .requestMatchers("/contact/complete","/contact/confirm","/contact","/admin/signin","/admin/signup","/admin/signup/confirm2","/admin/signup/register","/admin/signup/complete2").permitAll()
                 .anyRequest().authenticated()
               );
 		return http.build();

@@ -5,9 +5,10 @@
 <title>お問い合わせ</title>
 </head>
 <body>
-<h1>お問い合わせ<h1>
+ <h1>お問い合わせ</h1>
   <form th:action="@{/contact}" th:object="${contactForm}" method="post">
     <table border="1">
+		<input type="hidden" th:field="*{id}" />
       <tr>
         <td>姓</td>
         <td>

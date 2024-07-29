@@ -22,7 +22,7 @@ public class ContactServiceImpl implements ContactService {
         contact.setEmail(contactForm.getEmail());
         contact.setPhone(contactForm.getPhone());
         contact.setZipCode(contactForm.getZipCode());
-        contact.setAddress(contactForm.getLastName());
+        contact.setAddress(contactForm.getAddress());
         contact.setBuildingName(contactForm.getBuildingName());
         contact.setContactType(contactForm.getContactType());
         contact.setBody(contactForm.getBody());

@@ -33,6 +33,7 @@ public class ContactsService {
 		contact4.setEmail(contactUpdateRequest.getEmail());
 		contact4.setPhone(contactUpdateRequest.getPhone());
 		contact4.setZipCode(contactUpdateRequest.getZipCode());
+		contact4.setAddress(contactUpdateRequest.getAddress());
 		contact4.setBuildingName(contactUpdateRequest.getBuildingName());
 		contact4.setContactType(contactUpdateRequest.getContactType());
 		contact4.setBody(contactUpdateRequest.getBody());
