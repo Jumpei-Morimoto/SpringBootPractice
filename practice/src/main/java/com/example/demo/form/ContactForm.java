@@ -42,7 +42,6 @@ public class ContactForm implements Serializable{
 	@NotBlank
     private String body;
 	
-	
-	private Long id;
+
 }
 

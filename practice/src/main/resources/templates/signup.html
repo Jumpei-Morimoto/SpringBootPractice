@@ -32,7 +32,7 @@
 		<tr>
 			<td>パスワード</td>
 			<td>
-				<input type="text" th:field="*{password}">
+				<input type="password" th:field="*{password}">
 				<span th:if="${#fields.hasErrors('password')}" th:errors="*{password}" style="color: red"></span>
 			</td>
 		</tr>
