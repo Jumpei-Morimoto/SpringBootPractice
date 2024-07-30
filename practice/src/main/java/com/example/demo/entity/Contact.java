@@ -1,5 +1,8 @@
 package com.example.demo.entity;
 
+import java.io.Serializable;
+import java.util.Date;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -12,7 +15,7 @@ import lombok.Data;
 @Data
 @Table(name = "contacts")
 
-public class Contact {
+public class Contact implements Serializable{
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name = "id")
@@ -44,4 +47,10 @@ public class Contact {
 	
 	@Column(name = "body",nullable = false)
 	private String body;
+	
+	@Column(name = "updated_at")
+	private Date updatedAt;
+	
+	@Column(name = "created_at")
+	  private Date createdAt;
 }
